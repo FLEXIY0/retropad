@@ -1,21 +1,14 @@
-MIT License
+Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International Public License
 
-Copyright (c) 2026 Droopi
+Copyright (c) 2026 FLEXIY0. All rights reserved.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+This work (the "RetroPad" software and source code) is licensed under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-nd/4.0/
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+================================================================================
+SPECIAL ADAPTATION NOTICE FOR REINDEV / FOXLOADER DEVELOPERS:
+================================================================================
+Under Section 2(a)(1)(B) of this Public License, you are NOT permitted to share or integrate any Adapted Material (including merging, copying, or embedding this gamepad support into the base ReIndev game or FoxLoader).
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+If you wish to integrate this code into the official ReIndev project, you must obtain a separate written commercial/integration waiver from the copyright holder (FLEXIY0).
+
+A mandatory condition for granting this permission is that FLEXIY0 must be formally added to the official creators, developers, or contributors list (Credits) within the ReIndev project.
