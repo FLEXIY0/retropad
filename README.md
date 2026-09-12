@@ -234,5 +234,4 @@ Moving to SDL2 (via jamepad) would fix all three at the cost of bundling a nativ
 
 ## Licence
 
-Not chosen yet. Until one is added, the usual GitHub default applies — all rights reserved —
-which is worth fixing before anyone is invited to contribute.
+MIT
