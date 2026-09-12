@@ -1,0 +1,63 @@
+buildscript {
+    repositories {
+        mavenCentral()
+        maven { url 'https://cdn.fox2code.com/maven' }
+        maven { url 'https://jitpack.io/' }
+    }
+    dependencies {
+        classpath('com.fox2code.FoxLoader:dev:2.0-alpha38')
+    }
+}
+
+apply plugin: 'foxloader.dev'
+
+repositories {
+    mavenCentral()
+}
+
+// The Russian keyboard layout is spelled out in the source, and Windows' default encoding for
+// javac here is windows-1252, which cannot read it.
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+tasks.withType(Javadoc) {
+    options.encoding = 'UTF-8'
+}
+
+dependencies {
+    // Rumble. JInput reports no motors for an XInput pad, so the vibration has to be asked
+    // for through Windows' own XInput, and JNA is what lets a Java 8 client call it.
+    implementation 'net.java.dev.jna:jna:5.13.0'
+}
+
+version '0.1.0'
+group 'io.github.retropad'
+
+// JNA travels inside the mod jar: FoxLoader hands a mod no classpath of its own, so a
+// dependency that is not in the jar is not there at all. Only the Windows 64-bit stub comes
+// along - the other twenty-odd platform binaries are dead weight for a Windows game.
+jar {
+    from({
+        configurations.runtimeClasspath
+                .findAll { it.name.startsWith('jna-') }
+                .collect { zipTree(it) }
+    }) {
+        include 'com/sun/jna/*.class'
+        include 'com/sun/jna/internal/**'
+        include 'com/sun/jna/ptr/**'
+        include 'com/sun/jna/win32/**'
+        include 'com/sun/jna/win32-x86-64/**'
+    }
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+}
+
+foxloader {
+    modId = "retropad"
+    modName = "RetroPad"
+    modVersion = project.version
+    modDesc = "Play ReIndev with an Xbox or DualShock pad."
+    modAuthors = "retropad"
+    modEnvironment = "client"
+    modIcon = "assets/retropad/icon.png"
+    modMain = "io.github.retropad.RetroPad"
+}

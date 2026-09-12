@@ -1,0 +1,12 @@
+# Gradle
+.gradle/
+build/
+
+# The development client's game directory: worlds, screenshots, logs, natives.
+run/
+
+# Editors
+.idea/
+*.iml
+.vscode/
+*.swp

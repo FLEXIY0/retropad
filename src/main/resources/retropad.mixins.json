@@ -1,0 +1,26 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "io.github.retropad.mixins",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [],
+  "client": [
+    "GuiButtonAccessor",
+    "GuiContainerAccessor",
+    "GuiScreenAccessor",
+    "GuiSlotAccessor",
+    "ShapedRecipesAccessor",
+    "ShapelessRecipesAccessor",
+    "MixinGuiContainer",
+    "MixinGuiIngame",
+    "MixinMinecraft",
+    "MixinPlayerController",
+    "MixinRenderItem",
+    "MixinRenderBlocks",
+    "MixinGuiScreen",
+    "MixinMovementInputFromOptions"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
