@@ -233,5 +233,4 @@ Moving to SDL2 (via jamepad) would fix all three at the cost of bundling a nativ
 - **JNA** (Apache-2.0 / LGPL-2.1) — bundled, and used for one call: `XInputSetState`.
 
 ## Licence
-
-MIT
+CC BY-NC-ND 4.0 
